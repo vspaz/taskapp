@@ -1,11 +1,14 @@
 package com.doxily.taskapp.persistence.repository;
 
 import com.doxily.taskapp.persistence.models.Project;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class RepositoryImpl implements IProjectRepository {
 
     List<Project> projects = new ArrayList<>();
